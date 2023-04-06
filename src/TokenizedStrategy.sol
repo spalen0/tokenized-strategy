@@ -291,14 +291,12 @@ contract TokenizedStrategy {
     uint256 private constant MAX_BPS_EXTENDED = 1_000_000_000_000;
 
     // Address of the Vault factory that protocl fee config is retrieved from.
-    // NOTE: This will be set to deployed factory. deterministic address for testing is used now
     address private constant FACTORY =
-        0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f;
+        0xa8f46C3f5A89fbC3c80B3EE333a1dAF8FA719061;
 
-    // Address of the registry used to track all deployed vaults and strategies
-    // NOTE: holder address based on expected location during tests
+    // Address of the registry used to track all deployed vaults and strategies.
     address private constant REGISTRY =
-        0x2e234DAe75C793f67A35089C9d99245E1C58470b;
+        0x1DBcECb8E3fED0151C2B2Bcec288Cf8E42022669;
 
     /**
      * @dev Custom storgage slot that will be used to store the
