@@ -167,7 +167,7 @@ abstract contract BaseTokenizedStrategy {
      * be entirely permsionless and thus can be sandwhiched or otherwise
      * manipulated.
      *
-     * @param _amount The amount of 'asset' that the strategy should attemppt
+     * @param _amount The amount of 'asset' that the strategy should attempt
      * to deposit in the yield source.
      */
     function _deployFunds(uint256 _amount) internal virtual;
@@ -299,7 +299,7 @@ abstract contract BaseTokenizedStrategy {
      * or sandwhichable strategies. It should never be lower than `totalIdle`.
      *
      *   EX:
-     *       return TokenIzedStrategy.totalIdle();
+     *       return TokenizedStrategy.totalIdle();
      *
      * This does not need to take into account the `_owner`'s share balance
      * or conversion rates from shares to assets.
@@ -329,7 +329,7 @@ abstract contract BaseTokenizedStrategy {
      * and thus can be sandwhiched or otherwise manipulated.
      *
      * @param _amount The amount of 'asset' that the strategy should
-     * attemppt to deposit in the yield source.
+     * attempt to deposit in the yield source.
      */
     function deployFunds(uint256 _amount) external onlySelf {
         _deployFunds(_amount);
@@ -343,7 +343,7 @@ abstract contract BaseTokenizedStrategy {
      * This can only be called after a 'withdraw' or 'redeem' delegateCall
      * to the TokenizedStrategy so msg.sender == address(this).
      *
-     * @param _amount The amount of 'asset' that the strategy should attemppt to free up.
+     * @param _amount The amount of 'asset' that the strategy should attempt to free up.
      */
     function freeFunds(uint256 _amount) external onlySelf {
         _freeFunds(_amount);
