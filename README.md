@@ -1,7 +1,7 @@
 
 # Yearn Tokenized Strategy
 
-This repository contains the base code for the Yearn V3 tokenized strategy implementation. The V3 strategy implementation utilizes an immutable proxy pattern to allow anyome to easily create their own single strategy vaults that will all use the same logic held within the `TokenizedStrategy` for their redundant and high risk code. The implementation holds all ERC-20, ERC-4626, profit locking and reporting functionility to make any strategy that uses it a fully permisionless vault without holding any of this logic itself. 
+This repository contains the base code for the Yearn V3 tokenized strategy implementation. The V3 strategy implementation utilizes an immutable proxy pattern to allow anyone to easily create their own single strategy vaults that will all use the same logic held within the `TokenizedStrategy` for their redundant and high risk code. The implementation holds all ERC-20, ERC-4626, profit locking and reporting functionality to make any strategy that uses it a fully permissionless vault without holding any of this logic itself.
 
 NOTE: The implementation address that calls are delegated to is pre-set to a constant and can never be changed post deployment. The implementation contract itself is ownerless and can never be updated in any way.
 
@@ -11,7 +11,7 @@ A `Strategy` contract can become a fully ERC-4626 compliant vault by inheriting 
 
 [BaseTokenizedStrategy](https://github.com/yearn/tokenized-strategy/blob/master/src/BaseTokenizedStrategy.sol) - Abstract contract to inherit that communicates with the `TokenizedStrategy`.
 
-Full tech spech can be found [here](https://hackmd.io/@D4Z1faeARKedWmEygMxDBA/H1WtpMTCs)
+Full tech spec can be found [here](https://hackmd.io/@D4Z1faeARKedWmEygMxDBA/H1WtpMTCs)
 
 ## Installation and Setup
 
